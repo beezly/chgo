@@ -32,7 +32,7 @@ function chgo_install()
   else                                  arch="386"
   fi
 
-  if !(echo $version | egrep '1\.0[$\.]|1\.1[$\.]|1\.2[$\.]'); then
+  if !(echo $version | egrep '1\.0[$\.]|1\.1[br$\.]|1\.2[br$\.]'); then
     download_uri="https://golang.org/dl"
   else 
     download_uri="https://go.googlecode.com/files"
